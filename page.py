@@ -17,9 +17,6 @@ st.set_page_config(
     }
 )
 
-
-#st.title("Plant ID is based on *Plantnet.org*")
-
 st.markdown("""
     <h1 style='text-align: center; color: #4CAF50; text-shadow: 2px 2px 4px #45a040;'>
         Plant ID <p>   
