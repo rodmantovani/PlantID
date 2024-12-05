@@ -18,11 +18,6 @@ st.set_page_config(
     }
 )
 
-headers = {
-    "authorization": st.secrets["auth_token"],
-    "content-type":"application/json"
-}
-
 
 st.markdown("""
     <h1 style='text-align: center; color: #4CAF50; text-shadow: 2px 2px 4px #45a040;'>
@@ -77,7 +72,7 @@ if selected == "Bark":
     text_page = f"Tronco firme e sábio, guardião de histórias antigas, abraça o céu com seus braços de folhas, enquanto os pássaros cantam a melodia do tempo."
     st.write_stream(stream_data(text_page))
 
-API_KEY = "2b10e5Iw7vuVTPyTFOKhuToMe"
+API_KEY = st.secrets["auth_key"]
 PROJECT = "all"
 api_endpoint = f"https://my-api.plantnet.org/v2/identify/{PROJECT}?lang={lang_code}&api-key={API_KEY}"
 
