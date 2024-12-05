@@ -5,6 +5,7 @@ import pandas as pd
 from streamlit_option_menu import option_menu
 import time
 
+
 st.set_page_config(
     page_title="Plant ID",
     page_icon="🌿",
@@ -16,6 +17,12 @@ st.set_page_config(
         'About': "# This is a header. This is an *extremely* cool app!",
     }
 )
+
+headers = {
+    "authorization": st.secrets["auth_token"],
+    "content-type":"application/json"
+}
+
 
 st.markdown("""
     <h1 style='text-align: center; color: #4CAF50; text-shadow: 2px 2px 4px #45a040;'>
