@@ -28,7 +28,7 @@ st.markdown("""
 
 selected = option_menu(
     menu_title=None,
-    options=["Leaf", "Flower", "Fruit", "Bark"],
+    options=["🌿", "🌼", "🍒", "🌴"],
     icons=["camera", "camera", "camera", "camera"],
     menu_icon="cast",
     default_index=0,
